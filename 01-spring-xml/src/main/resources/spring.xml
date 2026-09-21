@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="humanManager1" class="org.j2os.Manager1">
+        <property name="dataBaseName" value="DB2" />
+    </bean>
+    <bean id="humanManager2" class="org.j2os.Manager1" scope="prototype">
+        <property name="dataBaseName" value="POSTGRES"/>
+    </bean>
+    <bean id="humanManager3" class="org.j2os.Manager1" lazy-init="false" >
+        <property name="dataBaseName" value="MONGO DB"/>
+    </bean>
+    <bean id="humanManager4" class="org.j2os.Manager1" lazy-init="true" >
+        <property name="dataBaseName" value="ELASTIC SEARCH"/>
+    </bean>
+
+    <bean id="humanManager5" class="org.j2os.Manager3" lazy-init="true">
+        <constructor-arg name="name" index="0" value="My SQL" />
+    </bean>
+
+</beans>
