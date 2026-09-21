@@ -2,7 +2,7 @@
 
 A hands-on Java project for learning and practicing core Spring Framework concepts.
 
-This repository follows my learning path from XML-based Spring configuration to annotation-based Dependency Injection.
+This repository follows my learning path from **XML-based Spring configuration** to **annotation-based Dependency Injection**.
 
 ## Topics Covered
 
@@ -16,44 +16,78 @@ This repository follows my learning path from XML-based Spring configuration to 
 * Prototype Scope
 * Lazy Initialization
 * Eager Initialization
-* Factory Method
+
+### Spring RMI & Factory Method
+
+* Java RMI
+* RMI Registry
+* Remote Interfaces
+* `UnicastRemoteObject`
+* `Serializable`
+* Spring `factory-bean`
+* Spring `factory-method`
+* Client/Server communication
+
+### Dependency Injection
+
+* Dependency Injection (DI)
+* Setter-based Dependency Injection
+* `ref` in XML configuration
+* Constructor Injection
+* Interface-based Dependency Injection
 
 ### Annotation-Based Configuration
 
+* Component Scanning
 * `@Component`
 * `@Service`
 * `@Autowired`
 * `@Qualifier`
 * `@Scope`
 * Constructor Injection
-
-### Remote Integration
-
-* Java RMI
-* Factory Method integration with Spring
+* Prototype Scope
 
 ## Project Structure
 
 ```text
-01-spring-xml
-    Spring XML configuration
-    Bean scopes
-    Lazy/Eager initialization
-    Constructor and Setter Injection
+spring-core-learning/
+│
+├── 01-spring-xml/
+│   ├── README.md
+│   └── Spring XML configuration
+│
+├── 02-spring-rmi/
+│   ├── README.md
+│   ├── client/
+│   └── server/
+│
+├── 03-spring-setter-di/
+│   ├── README.md
+│   └── Setter-based Dependency Injection
+│
+└── 04-annotation-di/
+    ├── README.md
+    └── Annotation-based Dependency Injection
+```
 
-02-spring-rmi
-    Java RMI client/server example
+## Learning Path
 
-03-factory-method
-    Spring Factory Method example
+The examples are organized to gradually introduce Spring Core concepts:
 
-04-annotation-di
-    Annotation-based Dependency Injection
-    @Component
-    @Service
-    @Autowired
-    @Qualifier
-    Constructor Injection
+```text
+Spring XML Configuration
+        ↓
+Bean Management & Scopes
+        ↓
+Spring RMI & Factory Method
+        ↓
+Setter-based Dependency Injection
+        ↓
+Annotation-based Dependency Injection
+        ↓
+Constructor Injection
+        ↓
+@Qualifier & Component Scanning
 ```
 
 ## Key Concept
@@ -92,4 +126,4 @@ public class Manager {
 
 ## Learning Status
 
-This repository is part of my ongoing journey to strengthen my Java and Spring skills and prepare for professional Java/Spring development.
+This repository is part of my ongoing journey to strengthen my **Java and Spring skills** and prepare for professional Java/Spring development.
