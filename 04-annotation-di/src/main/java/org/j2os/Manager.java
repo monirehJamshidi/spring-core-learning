@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class Manager {
 
 //    @Autowired
-//    @Qualifier("CERATO")
+//    @Qualifier("kia")
 //    private Car car;
 
     private final Car car;
