@@ -5,7 +5,7 @@ public class Manager1 implements ManagerIX {
 
     public Manager1()
     {
-        System.out.println("Manager1");
+        System.out.println("Manager1 constructor called");
     }
 
     public String getDataBaseName() {
@@ -16,6 +16,7 @@ public class Manager1 implements ManagerIX {
         this.dataBaseName = dataBaseName;
     }
 
+    @Override
     public void execute(){
         System.out.println("manager 1 execute invoked...   ".concat(dataBaseName));
     }

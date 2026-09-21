@@ -6,10 +6,12 @@ public class Manager3 implements ManagerIX {
 
     public Manager3(String name){
         this.name = name;
-        System.out.println("call constructor - ".concat(name));
+        System.out.println("Manager3 constructor called: " + name);
     }
 
+    @Override
     public void execute(){
-        System.out.println("manager 3 execute invoked...   ".concat(name));
+        System.out.println("manager 3 execute invoked...   " + name
+        );
     }
 }
